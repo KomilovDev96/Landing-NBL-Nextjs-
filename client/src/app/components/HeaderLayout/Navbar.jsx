@@ -10,8 +10,8 @@ const Navbar = () => {
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className={styles.navbar}>
-            <Container>
+        <Container>
+            <div className={styles.navbar}>
                 <div className={styles.container}>
                     <div className={styles.logo}>
                         <Link href="/">
@@ -31,9 +31,9 @@ const Navbar = () => {
                         <span className={`${styles.line} ${menuOpen ? styles.rotate2 : ''}`} />
                     </div>
                 </div>
-            </Container>
+            </div >
+        </Container>
 
-        </header>
     );
 };
 
